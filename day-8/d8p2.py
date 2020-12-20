@@ -13,7 +13,6 @@ found = False
 while not found:
     accumulator = 0
     this_try = True
-    past_found = 0
     visited_instructions = {}
     current_instruction = 0
     while True:
@@ -64,8 +63,6 @@ while not found:
             except:
                 found = True
                 break
-        elif past_found > 1:
-            break
 
        
 
